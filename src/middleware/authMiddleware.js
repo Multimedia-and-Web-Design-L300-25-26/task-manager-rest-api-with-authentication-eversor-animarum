@@ -6,7 +6,7 @@ import User from "../models/User.js";
 // 1. Extracts the JWT token from the Authorization header
 // 2. Verifies the token using the JWT_SECRET
 // 3. Finds the user associated with the token
-// 4. Attaches the user to req.user so it can be used in route handlers
+// 4. Attaches the user to req.user so its can be used in route handlers
 // 5. Calls next() to proceed to the next middleware/route
 // If token is invalid or missing, returns a 401 Unauthorized response
 

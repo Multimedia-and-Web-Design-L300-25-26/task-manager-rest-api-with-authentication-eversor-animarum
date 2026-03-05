@@ -4,7 +4,6 @@ import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-<<<<<<< HEAD
 // Apply authentication middleware to ALL task routes
 // This means every route below requires a valid JWT token
 router.use(authMiddleware);
@@ -128,26 +127,3 @@ router.delete("/:id", async (req, res) => {
 });
 
 export default router;
-=======
-// Apply auth middleware
-router.use(authMiddleware);
-
-// POST /api/tasks
-router.post("/", async (req, res) => {
-  // - Create task
-  // - Attach owner = req.user._id
-});
-
-// GET /api/tasks
-router.get("/", async (req, res) => {
-  // - Return only tasks belonging to req.user
-});
-
-// DELETE /api/tasks/:id
-router.delete("/:id", async (req, res) => {
-  // - Check ownership
-  // - Delete task
-});
-
-export default router;
->>>>>>> d4b1bc73d18ee6d16520f26bbbd554eea24acfec
