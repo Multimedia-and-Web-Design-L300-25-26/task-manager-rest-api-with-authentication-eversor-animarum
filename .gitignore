@@ -1,2 +1,7 @@
 node_modules/
+<<<<<<< HEAD
 .env
+.env.mydb
+=======
+.env
+>>>>>>> d4b1bc73d18ee6d16520f26bbbd554eea24acfec
